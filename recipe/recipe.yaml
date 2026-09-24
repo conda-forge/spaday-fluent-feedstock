@@ -1,5 +1,5 @@
 context:
-  version: "0.1.0"
+  version: "0.2.0"
 
 package:
   name: spaday-fluent
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/spaday-fluent/spaday_fluent-${{ version }}.tar.gz
-  sha256: f3fe8e3fe9287da598b5abcc63d858fa7605ecae2a91a6a54cab421fd1f43490
+  sha256: a02af6001053b48fc0a84794f18f148d45f661deae58bf0fc027e7199407fece
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - hatch-js
   run:
     - python >=${{ python_min }}
-    - spaday >=0.8.2,<1
+    - spaday >=0.10.0,<1
 
 tests:
   - python:
